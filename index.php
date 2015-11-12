@@ -4,7 +4,7 @@ include_once 'dbconnect.php';
 
 echo "Hello Snow World! <br /><br />";
 
-$conn = pg_connect($conn_string);
+$conn = pg_connect(pg_connection_string_from_database_url());
 
 if (!$conn) {
   echo "Conn:" . $conn . "<br />";
@@ -12,7 +12,7 @@ if (!$conn) {
   exit;
 }
 
-$result = pg_query($conn, "SELECT name, ticker__c, acres__c, typ__c  FROM area__c");
+$result = pg_query($conn, "SELECT name, ticker__c, acres__c, typ__c  FROM area__c WHERE schemaname='salesforce'");
 if (!$result) {
   echo "An error occurred while making query.\n";
   exit;
