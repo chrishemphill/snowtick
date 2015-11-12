@@ -15,6 +15,7 @@ if (!$conn) {
 $result = pg_query($conn, "SELECT name, ticker__c, acres__c, typ__c  FROM area__c WHERE schemaname='salesforce'");
 if (!$result) {
   echo "An error occurred while making query.\n";
+  echo pg_get_result($conn);
   exit;
 }
 
