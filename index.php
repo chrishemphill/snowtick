@@ -4,6 +4,8 @@ include_once 'dbconnect.php';
 
 echo "Hello Snow World! <br /><br />";
 
+/*
+
 $conn = pg_connect(pg_connection_string_from_database_url());
 
 if (!$conn) {
@@ -23,5 +25,7 @@ while ($row = pg_fetch_row($result)) {
   echo "name: $row[0]  ticker__c: $row[1]";
   echo "<br />\n";
 }
+
+*/
 
 ?> 
