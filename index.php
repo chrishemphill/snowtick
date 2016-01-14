@@ -4,9 +4,8 @@ include_once 'dbconnect.php';
 
 echo "Hello Snow World! <br /><br />";
 
-/*
-
-$conn = pg_connect(pg_connection_string_from_database_url());
+$conn = get_db_conn();
+//$conn = pg_connect(pg_connection_string_from_database_url());
 
 if (!$conn) {
   echo "Conn:" . $conn . "<br />";
@@ -26,6 +25,5 @@ while ($row = pg_fetch_row($result)) {
   echo "<br />\n";
 }
 
-*/
 
 ?> 
