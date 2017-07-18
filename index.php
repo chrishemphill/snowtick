@@ -2,7 +2,7 @@
 
 include_once 'dbconnect.php';
 
-echo "Hello Snowtick Visitors! <br /><br />";
+echo "Hello Snowtick World! <br /><br />";
 
 //$conn = get_db_conn();
 $conn = pg_connect(pg_connection_string_from_database_url());
