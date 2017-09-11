@@ -1,6 +1,7 @@
 <?php
-
 include_once 'dbconnect.php';
+
+
 
 echo "Hello Snowtick World! <br /><br />";
 
