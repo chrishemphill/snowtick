@@ -5,7 +5,7 @@ include_once 'dbconnect.php';
 echo "Hello Snowtick World! <br /><br />";
 
 echo "DB URL: " . getenv('DATABASE_URL') . "<br />";
-echo "ENV URL: " . $_ENV["DATABASE_URL"] . "<br />";
+echo "ENV URL: " . $_ENV["DATABASE_URL"] . "<br /><br />";
 
 $conn = pg_connect(pg_connection_string_from_database_url());
 
