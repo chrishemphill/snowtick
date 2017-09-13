@@ -1,0 +1,22 @@
+{
+  "name": "snowtick",
+  "scripts": {
+  },
+  "env": {
+    "PGSTUDIO_URL": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+    "heroku-postgresql",
+    "herokuconnect",
+    "pgstudio"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/php"
+    }
+  ]
+}
